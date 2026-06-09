@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>shedules page</title>
+      <style>header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    form{
+        margin-top: 15%;  
+    }
+    select{
+            width: 180px;
+            height: 50px; 
+            border-radius: 5px;
+            font-size: larger;
+            border-radius: 7%;
+        
+            
+        }
+        label{
+            font-size: larger;
+            padding-left: 2%;
+        }
+        button{
+            font-size: xx-large;
+            width: 180px;
+            height: 50px;
+            background-color: blue;
+            margin-left: 40%;
+            border-radius: 7%;
+            margin-top: 3%;
+            color: white;
+        }
+        input{
+            height: 50px;
+            width: 180px;
+            border-radius: 7%;
+            font-size: large;
+            
+
+            
+        }
+    </style>
+     
+    
+    </head>
+    <body>
+        <form action="sgr.php" method="post">
+        <label for="From">From</label>
+        <select name="from" id="from">
+        <option value="Morogoro">Morogoro</option>
+        <option value="Mwanza">Mwanza</option>
+        <option value="Dar es salaam">Dar es salaam</option>
+        <option value="Dodoma">Dodoma</option>
+        </select>
+        
+        <label for="To">To</label>
+        <select name="To" id="To"><br>
+        <option value="Morogoro">Morogoro</option>
+        <option value="Mwanza">Mwanza</option>
+        <option value="Dar es salaam">Dar es salaam</option>
+        <option value="Dodoma">Dodoma</option>
+        </select>
+        <label for="date">date</label>
+        <input type="date" name="date">
+
+        <label for="class">class</label>
+        <select name="class" id="class">
+        <option value="first class">first class</option>
+        <option value="economy">economy</option>
+        </select>
+
+        <button type="update">update</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<Html lang="EN">
+    <head>
+        <title>My Ticket</title>
+        <style>
+body{
+    background-color:white;
+}
+form{
+    background-color: rgb(249, 249, 248);
+    margin-top: 10%;
+    margin-left: 30%;
+    border-radius: 8px;
+    border: wheat;
+    padding-left: 7%;
+    padding-bottom: 5px;
+    margin-right: 25%;
+}
+button{
+    background-color: blue;
+    width: 75%;
+    height:62px;
+    border-radius: 8px;
+    font-size: x-large;
+}
+input{
+    width: 75%;
+    height: 62px;
+    border-radius: 8px;
+    font-size: x-large;
+        }
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 12px;
+    }
+    footer{
+        background-color:white;
+        color: grey;
+        padding-left: 30%;
+        margin-top: 12%;
+        height: 35px;
+    }
+        </style>
+    </head>
+    <body>
+        
+       
+      <form action="sgr.php" method="post">
+        <h2>Retrive Your Ticket</h2>
+        <p>Enter your booking reference (PNR) to access your e-ticket.</p><br><br>
+        <label for="Booking_Reference (PNR)">Booking_Reference (PNR)</label>
+        <input type="text" id="Booking_Reference" name="Booking_Reference" placeholder="" required><br><br>
+        <button type="submit">Search Ticket</button>
+      </form>  
+      <footer>
+        <p>sgr_online booking system. All right are reserved</p>
+      </footer>
+    </body>
+</Html>

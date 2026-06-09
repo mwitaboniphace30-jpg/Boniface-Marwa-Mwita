@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGR ONLINE TICKET</title>
+    <style>
+        /* Basic Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden; /* Prevents body scroll */
+        }
+
+        /* Top Header */
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        /* Main Body Container */
+        .main-container {
+            display: flex;
+            flex: 1; /* Takes remaining height */
+            width: 100%;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 240px;
+            background-color: #34495e;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            transition: all 0.3s;
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            border-left: 4px solid transparent;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover {
+            background-color: #2c3e50;
+            border-left: 4px solid #3498db;
+            color: white;
+        }
+
+        /* Main Content Area */
+        .content-area {
+            flex: 1;
+            background-color: #f4f7f6;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* Active link style (optional) */
+        .sidebar a.active {
+            background-color: #2c3e50;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">SGR ONLINE TICKET</div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="home_sgr.html" target="contentFrame">Home</a>
+            <a href="schedules.html" target="contentFrame">Schedules</a>
+            <a href="My Ticket.html" target="contentFrame">My Ticket</a>
+            <a href="passanger.html" target="contentFrame">passanger</a>
+            <a href="admin.html" target="contentFrame">Admin</a>
+        </div>
+
+        <!-- Main Content (Iframe) -->
+        <div class="content-area">
+            <iframe name="contentFrame" src="home_sgr.html"></iframe> 
+        </div>
+    </div>
+
+</body>
+</html

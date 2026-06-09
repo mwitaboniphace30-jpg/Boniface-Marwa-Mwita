@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>sgr page</title> 
+       <style>
+        body{
+            background-color: rgb(89, 89, 182);
+            align-items: center;
+            
+        }
+        form{
+            background-color: rgb(105, 105, 181);
+            width: 85%;
+            height: 480px;
+            padding-top: 20px;
+            border-radius: 5px;
+            margin-left: 5%;
+            padding-left: 5%;
+        }
+        input{
+            width: 190px;
+            height: 30px;
+            border-radius: 5px;
+            font-size: larger;
+        
+        }
+        select{
+              width: 190px;
+            height: 40px; 
+            border-radius: 5px;
+            font-size: larger;
+    
+        }
+        p{
+            font-size: x-large;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin-left: 15%;
+        }
+        p3{
+            font-size: small;
+        }
+        p2{
+            padding-left: 15%;
+            font-size: large;
+        }
+        h1{
+            color: antiquewhite;
+            margin-left: 20%;
+            font-size: 65px;
+        }
+        .footer{
+            background-color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px 20px 10px;
+        }
+        .footer-container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-bottom{
+            font-size: 13px;
+            padding-top: 10px;
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            position: fixed;
+        }
+        button{
+            width: 360px;
+                height: 50px;
+                border-radius: 8px;
+                background-color: blue;
+                font-size: xx-large;
+                font: bold;
+                margin-left: 30%;
+        }
+        
+        
+       </style>
+    </head>
+    <body>
+        
+        <h1>book your sgr ticket<br>online in minutes</h1>
+        <p>Travel comfortably across Tanzania on the Madaraka Express  and other SGR services.<br><br> Easy booking, instant confirmation</p>
+        <p>personal information</p>
+         
+        <form action="sgr.php" method="post">
+    
+<p>enter personal information to register</p><br>
+ <label for="user name">user name</label>
+  <input type="user name" name="user name">
+  <label for="email">email</label>
+  <input type="email" name="email">
+   <label for="phone">phone</label>
+  <input type="phone" name="phone"><br><br>
+
+   <label for="origin">---select origin---</label>
+    <select id="origin" name="origin" >
+        <option value="Dodoma">Dodoma</option>
+        <option value="morogoro">Morogoro</option>
+        <option value="Dar es salam">Dar es salam</option>
+        </select>
+
+            <label for="destnation">---select destination---</label>
+    <select id="destination" name="destination">
+        <option value="Dodoma">Dodoma</option>
+        <option value="morogoro">Morogoro</option>
+        <option value="Dar es salam">Dar es salam</option>
+        </select><br><br><br>
+
+         <label for="train name">train name</label>
+         <input type="train name" name="train name">
+
+           <label for="date ofissues">date of issues</label>
+        <input type="date" id="travel date" name="date of issues">
+
+        <label for="travel date">travel date</label>
+        <input type="date" id="travel date" name="travel date"><br><br><br>
+
+  <label for="arrival time">arrival time</label>
+        <input type="time" id="arrival time" name="date of issues">
+
+        <label for="time">departure time</label>
+        <input type="time" id="departure time" name="departure time"><br><br><br>
+
+        <label for="Adult">Adult</label>
+        <input type="number" id="Adult" name="Adult">
+
+        
+        <label for="Children">Children</label>
+        <input type="number" id="Children" name="Children">
+
+         <label for="class">---select class---</label>
+    <select type="select" id="class" name="class">
+        <option value="economy">economy</option>
+        <option value="firstclass">first class</option>
+       </select><br><br><br>
+       <button type="submit">submit</button>
+
+    
+        </form>
+
+        <footer class="footer">
+            <div class="footer-container">
+            <div class="footer-section">
+            <h3>sgr_online booking</h3>
+            <p3>Tanzania Standard Railway</p3><br>
+            <p3>Tanzania's premier online platform for Standard Gauge Railway ticket booking</p3>
+            </div>
+            <div class="footer-section">
+            <h3>Quickly access</h3>
+             <ul>
+            <a href="">Home</a><br>
+            <a href="">Schedules</a><br>
+            <a href="">My Ticket</a><br>
+            <a href="">Admin</a>
+             </ul>
+            </div>
+            <div class="footer-section">
+            <h3>contact</h3>
+            <p1>tanzania23@sgr.com</p1><br>
+            <p1>+225754646882</p1>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <p1>sgr_online booking system. All right are reserved</p1>
+            </div>
+        </footer>
+    </body>
+</html>
